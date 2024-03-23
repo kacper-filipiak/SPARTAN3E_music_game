@@ -23,6 +23,11 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FSM_SendSamples.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="FSM_SendSamples.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="FSM_SendSamples.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="FSM_SendSamples.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="FSM_SendSamples.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Keyboard_driver.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Keyboard_driver.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Keyboard_driver.xst"/>

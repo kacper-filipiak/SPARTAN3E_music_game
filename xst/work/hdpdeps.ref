@@ -1,8 +1,16 @@
-V3 3
-FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd 2024/03/23.16:20:31 P.20131013
-EN work/Keyboard_driver 1711210845 \
-      FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd \
+V3 7
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd 2024/03/23.20:17:15 P.20131013
+EN work/FSM_SendSamples 1711221446 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Keyboard_driver/Behavioral 1711210846 \
-      FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd \
-      EN work/Keyboard_driver 1711210845
+AR work/FSM_SendSamples/Behavioral 1711221447 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd \
+      EN work/FSM_SendSamples 1711221446
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd 2024/03/23.18:14:15 P.20131013
+EN work/Keyboard_driver 1711214193 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Keyboard_driver/Behavioral 1711214194 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd \
+      EN work/Keyboard_driver 1711214193
+FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd 2024/03/23.16:20:31 P.20131013

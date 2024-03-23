@@ -1,2 +1,4 @@
-EN keyboard_driver NULL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd sub00/vhpl00 1711210845
-AR keyboard_driver behavioral /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd sub00/vhpl01 1711210846
+EN keyboard_driver NULL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd sub00/vhpl00 1711214193
+AR keyboard_driver behavioral /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd sub00/vhpl01 1711214194
+EN fsm_sendsamples NULL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd sub00/vhpl02 1711221446
+AR fsm_sendsamples behavioral /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd sub00/vhpl03 1711221447

@@ -20,10 +20,9 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/Keyboard_driver is now defined in a different file.  It was defined in "/home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd".
-WARNING:HDLParsers:3607 - Unit work/Keyboard_driver/Behavioral is now defined in a different file.  It was defined in "/home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd".
-Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd" in Library work.
-Architecture behavioral of Entity keyboard_driver is up to date.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd" in Library work.
+Entity <FSM_SendSamples> compiled.
+Entity <FSM_SendSamples> (Architecture <Behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -32,9 +31,9 @@ Total CPU time to Xst completion: 0.04 secs
 --> 
 
 
-Total memory usage is 455752 kilobytes
+Total memory usage is 455892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
