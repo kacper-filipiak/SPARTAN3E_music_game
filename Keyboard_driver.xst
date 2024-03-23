@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Projects/SPARTAN3E_music_game/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Projects/SPARTAN3E_music_game/xst"
+elaborate
+-ifn Keyboard_driver.prj
+-ifmt mixed

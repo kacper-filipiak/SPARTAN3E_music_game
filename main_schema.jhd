@@ -1,0 +1,3 @@
+MODULE main_schema
+	SUBMODULE PS2_Rx
+		INSTANCE XLXI_1

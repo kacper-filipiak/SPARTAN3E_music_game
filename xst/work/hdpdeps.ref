@@ -1,0 +1,8 @@
+V3 3
+FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd 2024/03/23.16:20:31 P.20131013
+EN work/Keyboard_driver 1711210845 \
+      FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Keyboard_driver/Behavioral 1711210846 \
+      FL /home/ise/Projects/SPARTAN3E_music_game/Keyboard_driver.vhd \
+      EN work/Keyboard_driver 1711210845
