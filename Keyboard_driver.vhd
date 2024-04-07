@@ -41,45 +41,34 @@ end Keyboard_driver;
 
 architecture Behavioral of Keyboard_driver is
 
-type state_type is ( PLAYING, STOPPING, IDLE );
-signal prev_key : STD_LOGIC_VECTOR(7 downto 0);
-signal state, next_state : state_type;
+signal prev_key : STD_LOGIC_VECTOR(7 downto 0) := x"00";
+signal Labort: STD_LOGIC := '0';
+signal Lplay : STD_LOGIC := '0';
 begin
 process1 : process( Clk )
 begin
 	if rising_edge( Clk ) then	
 		if Rst = '1' then
-			if state = PLAYING then
-				state <= STOPPING;
-			else
-				state <= IDLE;
-			end if;
+		-- TODO: Add reset
 		else
 			if DO_Rdy = '1' then
-				state <= next_state;
+				Labort <= '1';
+			elsif Labort = '1' then
+				Labort <= '0';
+				if not DO = prev_key then
+					Lplay <= '1';
+					prev_key <= DO;
+				end if;
+			elsif Lplay = '1' then
+				Lplay <= '0';
 			end if;
 		end if;
 	end if;
 
 end process process1;
-process2 : process( state, DO )
-begin
-	case state is
-		when IDLE =>
-			next_state <= PLAYING;
-			prev_key <= DO;
-		when PLAYING =>
-			if prev_key = DO then
-				next_state <= PLAYING;
-			else 
-				next_state <= STOPPING;
-			end if;
-		when STOPPING =>
-			next_state <= STOPPING;
-	end case;
 
-end process process2;
-
+Abort <= Labort;
+Play <= Lplay;
 
 end Behavioral;
 

@@ -1,0 +1,4 @@
+vhdl work "Keyboard_driver.vhd"
+vhdl work "kbd_2_ascii.vhd"
+vhdl work "FSM_SendSamples.vhd"
+vhdl work "main_schema.vhf"

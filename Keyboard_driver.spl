@@ -1,0 +1,10 @@
+[Inputs]
+DO_Rdy
+Clk
+Rst
+=DO[7:0]=
+[Outputs]
+Play
+Abort
+=FName[7:0]=
+[BiDir]

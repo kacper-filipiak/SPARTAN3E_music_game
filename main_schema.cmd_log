@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/ise/Projects/SPARTAN3E_music_game/main_schema.xst" -ofn "/home/ise/Projects/SPARTAN3E_music_game/main_schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -i -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -i -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
