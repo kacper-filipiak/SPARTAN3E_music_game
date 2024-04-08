@@ -1,0 +1,5 @@
+[Inputs]
+=DO[7:0]=
+[Outputs]
+=ASCII[7:0]=
+[BiDir]
