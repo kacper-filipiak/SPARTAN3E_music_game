@@ -42,7 +42,7 @@ process(DO) is
 begin
 	case DO is
 		when x"1C" => -- a
-			ASCII <= x"44";
+			ASCII <= x"41";
 		when x"1B" => -- s
 			ASCII <= x"53";
 		when x"23" => -- d
