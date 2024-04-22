@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main_schema.vhf
--- /___/   /\     Timestamp : 04/07/2024 22:04:55
+-- /___/   /\     Timestamp : 04/09/2024 17:32:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath /home/ise/Projects/SPARTAN3E_music_game/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl /home/ise/Projects/SPARTAN3E_music_game/main_schema.vhf -w /home/ise/Projects/SPARTAN3E_music_game/main_schema.sch
+--Command: sch2hdl -sympath C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.sch
 --Design Name: main_schema
 --Device: spartan3e
 --Purpose:
@@ -47,6 +47,8 @@ entity main_schema is
 end main_schema;
 
 architecture BEHAVIORAL of main_schema is
+   signal led6        : std_logic;
+   signal led7        : std_logic;
    signal XLXN_8      : std_logic_vector (15 downto 0);
    signal XLXN_9      : std_logic_vector (15 downto 0);
    signal XLXN_14     : std_logic;
@@ -55,14 +57,12 @@ architecture BEHAVIORAL of main_schema is
    signal XLXN_17     : std_logic_vector (3 downto 0);
    signal XLXN_18     : std_logic_vector (11 downto 0);
    signal XLXN_19     : std_logic;
-   signal XLXN_20     : std_logic;
    signal XLXN_21     : std_logic;
-   signal XLXN_51     : std_logic_vector (7 downto 0);
-   signal XLXN_53     : std_logic_vector (7 downto 0);
-   signal XLXN_55     : std_logic;
-   signal XLXN_70     : std_logic_vector (7 downto 0);
-   signal XLXN_71     : std_logic;
-   signal XLXN_72     : std_logic;
+   signal XLXN_82     : std_logic;
+   signal XLXN_104    : std_logic_vector (7 downto 0);
+   signal XLXN_105    : std_logic;
+   signal XLXN_107    : std_logic_vector (7 downto 0);
+   signal XLXN_108    : std_logic_vector (7 downto 0);
    component PS2_Rx
       port ( PS2_Clk   : in    std_logic; 
              PS2_Data  : in    std_logic; 
@@ -152,18 +152,18 @@ begin
                 Clk_50MHz=>CLK,
                 PS2_Clk=>PS2_CLK,
                 PS2_Data=>PS2_DATA,
-                DO(7 downto 0)=>XLXN_53(7 downto 0),
-                DO_Rdy=>XLXN_55);
+                DO(7 downto 0)=>XLXN_104(7 downto 0),
+                DO_Rdy=>XLXN_105);
    
    XLXI_2 : WAVreader
-      port map (Abort=>XLXN_72,
+      port map (Abort=>led6,
                 Clk_Sys=>CLK,
                 Clk_50MHz=>CLK,
-                DO_Pop=>XLXN_20,
-                FName(7 downto 0)=>XLXN_51(7 downto 0),
+                DO_Pop=>XLXN_82,
+                FName(7 downto 0)=>XLXN_108(7 downto 0),
                 Reset=>Reset,
                 SDC_MISO=>SDC_MISO,
-                Start=>XLXN_71,
+                Start=>led7,
                 Busy=>open,
                 DO_L(15 downto 0)=>XLXN_8(15 downto 0),
                 DO_R(15 downto 0)=>XLXN_9(15 downto 0),
@@ -209,20 +209,20 @@ begin
                 DWr_Cmd(3 downto 0)=>XLXN_16(3 downto 0),
                 DWr_Data(11 downto 0)=>XLXN_18(11 downto 0),
                 DWr_Start=>XLXN_19,
-                Samp_Pop=>XLXN_20);
+                Samp_Pop=>XLXN_82);
    
-   XLXI_5 : kbd_2_ascii
-      port map (DO(7 downto 0)=>XLXN_70(7 downto 0),
-                ASCII(7 downto 0)=>XLXN_51(7 downto 0));
+   XLXI_8 : kbd_2_ascii
+      port map (DO(7 downto 0)=>XLXN_107(7 downto 0),
+                ASCII(7 downto 0)=>XLXN_108(7 downto 0));
    
-   XLXI_6 : Keyboard_driver
+   XLXI_9 : Keyboard_driver
       port map (Clk=>CLK,
-                DO(7 downto 0)=>XLXN_53(7 downto 0),
-                DO_Rdy=>XLXN_55,
+                DO(7 downto 0)=>XLXN_104(7 downto 0),
+                DO_Rdy=>XLXN_105,
                 Rst=>Reset,
-                Abort=>XLXN_72,
-                FName(7 downto 0)=>XLXN_70(7 downto 0),
-                Play=>XLXN_71);
+                Abort=>led6,
+                FName(7 downto 0)=>XLXN_107(7 downto 0),
+                Play=>led7);
    
 end BEHAVIORAL;
 

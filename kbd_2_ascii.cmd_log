@@ -1,2 +1,8 @@
 vhdtdtfi -lib work kbd_2_ascii.vhd -prj SPARTAN_3E_music_game -o kbd_2_ascii.spl -module kbd_2_ascii -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e kbd_2_ascii.spl /home/ise/Projects/SPARTAN3E_music_game/kbd_2_ascii.sym 
+vhdtdtfi -lib work kbd_2_ascii.vhd -prj SPARTAN_3E_music_game -o kbd_2_ascii.spl -module kbd_2_ascii -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kbd_2_ascii.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.sym 
+vhdtdtfi -lib work kbd_2_ascii.vhd -prj SPARTAN_3E_music_game -o kbd_2_ascii.spl -module kbd_2_ascii -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kbd_2_ascii.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.sym 
+vhdtdtfi -lib work kbd_2_ascii.vhd -prj SPARTAN_3E_music_game -o kbd_2_ascii.spl -module kbd_2_ascii -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kbd_2_ascii.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.sym 
