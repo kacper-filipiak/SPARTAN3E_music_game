@@ -56,13 +56,13 @@ begin
 			if DO_Rdy = '1' then
 				key <= DO;
 				Labort <= '1';
+				Lplay <= '0';
 			elsif Labort = '1' then
 				Labort <= '0';
-				Lplay <= '1';
-				--if not key = prev_key then
-					--Lplay <= '1';
-					--prev_key <= key;
-				--end if;
+				if not key = prev_key then
+					Lplay <= '1';
+					prev_key <= key;
+				end if;
 			--elsif Lplay = '1' then
 				--Lplay <= '0';
 			end if;
