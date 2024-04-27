@@ -5,7 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;CLK&quot; PERIOD = 20.0ns HIGH 50%;&gt; [GenIO.ucf(3)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">CLK_BUFGP</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 </messages>

@@ -45,7 +45,7 @@ signal prev_key : STD_LOGIC_VECTOR(7 downto 0) := x"00";
 signal key : STD_LOGIC_VECTOR(7 downto 0) := x"00";
 signal Labort: STD_LOGIC := '0';
 signal Lplay : STD_LOGIC := '0';
-
+signal released: STD_LOGIC := '1';
 begin
 process1 : process( Clk )
 begin
@@ -55,14 +55,19 @@ begin
 		else
 			if DO_Rdy = '1' then
 				key <= DO;
-				Labort <= '1';
-				Lplay <= '0';
+				if key = X"F0" then
+					released <= '1';
+				elsif not prev_key = key or released = '1' then
+					released <= '0';
+					Labort <= '1';
+				end if;
+				Lplay <= '1';
 			elsif Labort = '1' then
 				Labort <= '0';
-				if not key = prev_key then
-					Lplay <= '1';
-					prev_key <= key;
-				end if;
+				--if key = X"F0" then
+					--Lplay <= '0';
+					--prev_key <= key;
+				--end if;
 			--elsif Lplay = '1' then
 				--Lplay <= '0';
 			end if;

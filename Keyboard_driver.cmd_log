@@ -24,3 +24,9 @@ vhdtdtfi -lib work Keyboard_driver.vhd -prj SPARTAN_3E_music_game -o Keyboard_dr
 spl2sym -intstyle ise -family spartan3e Keyboard_driver.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.sym 
 vhdtdtfi -lib work Keyboard_driver.vhd -prj SPARTAN_3E_music_game -o Keyboard_driver.spl -module Keyboard_driver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e Keyboard_driver.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.sym 
+vhdtdtfi -lib work Keyboard_driver.vhd -prj SPARTAN_3E_music_game -o Keyboard_driver.spl -module Keyboard_driver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Keyboard_driver.spl C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.sym 
+vhdtdtfi -lib work Keyboard_driver.vhd -prj SPARTAN_3E_music_game -o Keyboard_driver.spl -module Keyboard_driver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Keyboard_driver.spl C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.sym 
+vhdtdtfi -lib work Keyboard_driver.vhd -prj SPARTAN_3E_music_game -o Keyboard_driver.spl -module Keyboard_driver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Keyboard_driver.spl C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.sym 

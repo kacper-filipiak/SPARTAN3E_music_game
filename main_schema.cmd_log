@@ -122,3 +122,27 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_sc
 par -w -intstyle ise -ol high -t 1 main_schema_map.ncd main_schema.ncd main_schema.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_schema.twx main_schema.ncd -o main_schema.twr main_schema.pcf -ucf ADC_DAC.ucf -ucf PS2_USB_SDC.ucf -ucf GenIO.ucf 
 bitgen -intstyle ise -f main_schema.ut main_schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.xst" -ofn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -uc PS2_USB_SDC.ucf -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
+par -w -intstyle ise -ol high -t 1 main_schema_map.ncd main_schema.ncd main_schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_schema.twx main_schema.ncd -o main_schema.twr main_schema.pcf -ucf PS2_USB_SDC.ucf -ucf GenIO.ucf -ucf ADC_DAC.ucf 
+bitgen -intstyle ise -f main_schema.ut main_schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.xst" -ofn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -uc PS2_USB_SDC.ucf -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
+par -w -intstyle ise -ol high -t 1 main_schema_map.ncd main_schema.ncd main_schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_schema.twx main_schema.ncd -o main_schema.twr main_schema.pcf -ucf PS2_USB_SDC.ucf -ucf GenIO.ucf -ucf ADC_DAC.ucf 
+bitgen -intstyle ise -f main_schema.ut main_schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.xst" -ofn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -uc PS2_USB_SDC.ucf -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
+par -w -intstyle ise -ol high -t 1 main_schema_map.ncd main_schema.ncd main_schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_schema.twx main_schema.ncd -o main_schema.twr main_schema.pcf -ucf PS2_USB_SDC.ucf -ucf GenIO.ucf -ucf ADC_DAC.ucf 
+bitgen -intstyle ise -f main_schema.ut main_schema.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.xst" -ofn "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd black_boxes -nt timestamp -uc PS2_USB_SDC.ucf -uc GenIO.ucf -uc ADC_DAC.ucf -p xc3s500e-fg320-4 main_schema.ngc main_schema.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_schema_map.ncd main_schema.ngd main_schema.pcf 
+par -w -intstyle ise -ol high -t 1 main_schema_map.ncd main_schema.ncd main_schema.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_schema.twx main_schema.ncd -o main_schema.twr main_schema.pcf -ucf PS2_USB_SDC.ucf -ucf GenIO.ucf -ucf ADC_DAC.ucf 
+bitgen -intstyle ise -f main_schema.ut main_schema.ncd 

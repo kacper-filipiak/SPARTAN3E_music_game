@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/xst"
+set -tmpdir "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/xst"
 elaborate
 -ifn Keyboard_driver.prj
 -ifmt mixed

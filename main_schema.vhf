@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main_schema.vhf
--- /___/   /\     Timestamp : 04/09/2024 17:32:25
+-- /___/   /\     Timestamp : 04/23/2024 15:34:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.sch
+--Command: sch2hdl -sympath C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.sch
 --Design Name: main_schema
 --Device: spartan3e
 --Purpose:
