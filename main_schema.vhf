@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main_schema.vhf
--- /___/   /\     Timestamp : 04/23/2024 15:34:37
+-- /___/   /\     Timestamp : 05/02/2024 07:26:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.sch
+--Command: sch2hdl -sympath /home/ise/Projects/SPARTAN3E_music_game/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl /home/ise/Projects/SPARTAN3E_music_game/main_schema.vhf -w /home/ise/Projects/SPARTAN3E_music_game/main_schema.sch
 --Design Name: main_schema
 --Device: spartan3e
 --Purpose:
@@ -43,26 +43,43 @@ entity main_schema is
           SDC_SS      : out   std_logic; 
           SPI_MOSI    : out   std_logic; 
           SPI_SKC     : out   std_logic; 
-          SPI_SS_B    : out   std_logic);
+          SPI_SS_B    : out   std_logic; 
+          VGA_B       : out   std_logic; 
+          VGA_G       : out   std_logic; 
+          VGA_HS      : out   std_logic; 
+          VGA_R       : out   std_logic; 
+          VGA_VS      : out   std_logic);
 end main_schema;
 
 architecture BEHAVIORAL of main_schema is
-   signal led6        : std_logic;
-   signal led7        : std_logic;
-   signal XLXN_8      : std_logic_vector (15 downto 0);
-   signal XLXN_9      : std_logic_vector (15 downto 0);
-   signal XLXN_14     : std_logic;
-   signal XLXN_15     : std_logic;
-   signal XLXN_16     : std_logic_vector (3 downto 0);
-   signal XLXN_17     : std_logic_vector (3 downto 0);
-   signal XLXN_18     : std_logic_vector (11 downto 0);
-   signal XLXN_19     : std_logic;
-   signal XLXN_21     : std_logic;
-   signal XLXN_82     : std_logic;
-   signal XLXN_104    : std_logic_vector (7 downto 0);
-   signal XLXN_105    : std_logic;
-   signal XLXN_107    : std_logic_vector (7 downto 0);
-   signal XLXN_108    : std_logic_vector (7 downto 0);
+   attribute BOX_TYPE   : string ;
+   signal led6                           : std_logic;
+   signal led7                           : std_logic;
+   signal XLXN_8                         : std_logic_vector (15 downto 0);
+   signal XLXN_9                         : std_logic_vector (15 downto 0);
+   signal XLXN_14                        : std_logic;
+   signal XLXN_15                        : std_logic;
+   signal XLXN_16                        : std_logic_vector (3 downto 0);
+   signal XLXN_17                        : std_logic_vector (3 downto 0);
+   signal XLXN_18                        : std_logic_vector (11 downto 0);
+   signal XLXN_19                        : std_logic;
+   signal XLXN_82                        : std_logic;
+   signal XLXN_104                       : std_logic_vector (7 downto 0);
+   signal XLXN_105                       : std_logic;
+   signal XLXN_107                       : std_logic_vector (7 downto 0);
+   signal XLXN_108                       : std_logic_vector (7 downto 0);
+   signal XLXN_213                       : std_logic;
+   signal XLXN_219                       : std_logic;
+   signal XLXI_16_Char_DI_openSignal     : std_logic_vector (7 downto 0);
+   signal XLXI_16_Char_WE_openSignal     : std_logic;
+   signal XLXI_16_Clk_Sys_openSignal     : std_logic;
+   signal XLXI_16_Clk_50MHz_openSignal   : std_logic;
+   signal XLXI_16_CursorOn_openSignal    : std_logic;
+   signal XLXI_16_Goto00_openSignal      : std_logic;
+   signal XLXI_16_Home_openSignal        : std_logic;
+   signal XLXI_16_NewLine_openSignal     : std_logic;
+   signal XLXI_16_ScrollClear_openSignal : std_logic;
+   signal XLXI_16_ScrollEn_openSignal    : std_logic;
    component PS2_Rx
       port ( PS2_Clk   : in    std_logic; 
              PS2_Data  : in    std_logic; 
@@ -146,6 +163,29 @@ architecture BEHAVIORAL of main_schema is
              FName  : out   std_logic_vector (7 downto 0));
    end component;
    
+   component VGAtxt48x20
+      port ( Char_DI     : in    std_logic_vector (7 downto 0); 
+             Home        : in    std_logic; 
+             NewLine     : in    std_logic; 
+             Goto00      : in    std_logic; 
+             Clk_Sys     : in    std_logic; 
+             Clk_50MHz   : in    std_logic; 
+             CursorOn    : in    std_logic; 
+             ScrollEn    : in    std_logic; 
+             ScrollClear : in    std_logic; 
+             Busy        : out   std_logic; 
+             VGA_HS      : out   std_logic; 
+             VGA_VS      : out   std_logic; 
+             VGA_RGB     : out   std_logic; 
+             Char_WE     : in    std_logic);
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
 begin
    XLXI_1 : PS2_Rx
       port map (Clk_Sys=>CLK,
@@ -188,7 +228,7 @@ begin
                 Start=>XLXN_19,
                 AD_CONV=>AD_CONV,
                 AMP_CS=>AMP_CS,
-                Busy=>XLXN_21,
+                Busy=>XLXN_213,
                 DAC_CLR=>DAC_CLR,
                 DAC_CS=>DAC_DS,
                 FPGA_INIT_B=>FPGA_INIT_B,
@@ -199,7 +239,7 @@ begin
    
    XLXI_4 : FSM_SendSamples
       port map (Clk=>CLK,
-                DWr_Busy=>XLXN_21,
+                DWr_Busy=>XLXN_213,
                 Reset=>Reset,
                 SampL(15 downto 0)=>XLXN_8(15 downto 0),
                 SampR(15 downto 0)=>XLXN_9(15 downto 0),
@@ -223,6 +263,34 @@ begin
                 Abort=>led6,
                 FName(7 downto 0)=>XLXN_107(7 downto 0),
                 Play=>led7);
+   
+   XLXI_16 : VGAtxt48x20
+      port map (Char_DI(7 downto 0)=>XLXI_16_Char_DI_openSignal(7 downto 0),
+                Char_WE=>XLXI_16_Char_WE_openSignal,
+                Clk_Sys=>XLXI_16_Clk_Sys_openSignal,
+                Clk_50MHz=>XLXI_16_Clk_50MHz_openSignal,
+                CursorOn=>XLXI_16_CursorOn_openSignal,
+                Goto00=>XLXI_16_Goto00_openSignal,
+                Home=>XLXI_16_Home_openSignal,
+                NewLine=>XLXI_16_NewLine_openSignal,
+                ScrollClear=>XLXI_16_ScrollClear_openSignal,
+                ScrollEn=>XLXI_16_ScrollEn_openSignal,
+                Busy=>open,
+                VGA_HS=>VGA_HS,
+                VGA_RGB=>XLXN_219,
+                VGA_VS=>VGA_VS);
+   
+   XLXI_18 : BUF
+      port map (I=>XLXN_219,
+                O=>VGA_R);
+   
+   XLXI_23 : BUF
+      port map (I=>XLXN_219,
+                O=>VGA_G);
+   
+   XLXI_25 : BUF
+      port map (I=>XLXN_219,
+                O=>VGA_B);
    
 end BEHAVIORAL;
 

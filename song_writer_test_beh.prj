@@ -1,0 +1,2 @@
+vhdl work "song_writer.vhd"
+vhdl work "song_writer_test.vhd"

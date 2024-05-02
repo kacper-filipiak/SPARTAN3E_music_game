@@ -1,0 +1,31 @@
+Command line:
+   song_writer_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60903
+
+Thu May  2 07:59:16 2024
+
+
+ Elaboration Time: 0.34 sec
+
+ Current Memory Usage: 215.261 Meg
+
+ Total Signals          : 14
+ Total Nets             : 15
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 417
+Total Line Count : 20
+In process song_writer.vhd:70 
+ 
+
+ Total Simulation Time: 0.45 sec
+
+ Current Memory Usage: 292.86 Meg
+
+Thu May  2 08:00:26 2024
+
