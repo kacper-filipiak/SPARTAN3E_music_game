@@ -22,12 +22,101 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SPARTAN_3E_music_game.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="FSM_SendSamples.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Keyboard_driver.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="kbd_2_ascii.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="main_schema.vhf"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="main_schema_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="song_writer.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="song_writer.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="song_writer.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="song_writer.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="song_writer.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="song_writer_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="song_writer_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="song_writer_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="song_writer_test_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1714634780" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1714634780">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636646" xil_pn:in_ck="-6528820116984732417" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1714636646">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="FSM_SendSamples.vhd"/>
+      <outfile xil_pn:name="Keyboard_driver.vhd"/>
+      <outfile xil_pn:name="kbd_2_ascii.vhd"/>
+      <outfile xil_pn:name="song_writer.vhd"/>
+      <outfile xil_pn:name="song_writer_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636083" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1517882986410549688" xil_pn:start_ts="1714636083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636088" xil_pn:in_ck="-4573957452528879647" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8565845198046187082" xil_pn:start_ts="1714636083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="main_schema.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1714634787" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6619608377502874966" xil_pn:start_ts="1714634787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636646" xil_pn:in_ck="788818544243127718" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1714636646">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="FSM_SendSamples.vhd"/>
+      <outfile xil_pn:name="Keyboard_driver.vhd"/>
+      <outfile xil_pn:name="kbd_2_ascii.vhd"/>
+      <outfile xil_pn:name="main_schema.vhf"/>
+      <outfile xil_pn:name="song_writer.vhd"/>
+      <outfile xil_pn:name="song_writer_test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636654" xil_pn:in_ck="788818544243127718" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7315757564410246258" xil_pn:start_ts="1714636646">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="song_writer_test_beh.prj"/>
+      <outfile xil_pn:name="song_writer_test_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1714636655" xil_pn:in_ck="4741892389131178753" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5134990539512052351" xil_pn:start_ts="1714636654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="song_writer_test_isim_beh.wdb"/>
+    </transform>
+  </transforms>
 
 </generated_project>

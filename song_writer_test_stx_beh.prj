@@ -1,0 +1,2 @@
+vhdl isim_temp "song_writer.vhd"
+vhdl isim_temp "song_writer_test.vhd"

@@ -1,0 +1,8 @@
+vhdtdtfi -lib work song_writer.vhd -prj SPARTAN_3E_music_game -o song_writer.spl -module song_writer -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e song_writer.spl /home/ise/Projects/SPARTAN3E_music_game/song_writer.sym 
+vhdtdtfi -lib work song_writer.vhd -prj SPARTAN_3E_music_game -o song_writer.spl -module song_writer -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e song_writer.spl /home/ise/Projects/SPARTAN3E_music_game/song_writer.sym 
+vhdtdtfi -lib work song_writer.vhd -prj SPARTAN_3E_music_game -o song_writer.spl -module song_writer -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e song_writer.spl /home/ise/Projects/SPARTAN3E_music_game/song_writer.sym 
+vhdtdtfi -lib work song_writer.vhd -prj SPARTAN_3E_music_game -o song_writer.spl -module song_writer -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e song_writer.spl /home/ise/Projects/SPARTAN3E_music_game/song_writer.sym 

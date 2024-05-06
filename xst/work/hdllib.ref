@@ -1,8 +1,10 @@
-AR main_schema behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf sub00/vhpl07 1713881130
 EN keyboard_driver NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.vhd sub00/vhpl00 1713881127
-AR fsm_sendsamples behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/FSM_SendSamples.vhd sub00/vhpl03 1713881124
-EN fsm_sendsamples NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/FSM_SendSamples.vhd sub00/vhpl02 1713881123
-EN main_schema NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf sub00/vhpl06 1713881129
-AR keyboard_driver behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.vhd sub00/vhpl01 1713881128
-EN kbd_2_ascii NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.vhd sub00/vhpl04 1713881125
+AR main_schema behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf sub00/vhpl07 1713881130
 AR kbd_2_ascii behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.vhd sub00/vhpl05 1713881126
+EN main_schema NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/main_schema.vhf sub00/vhpl06 1713881129
+AR song_writer behavioral /home/ise/Projects/SPARTAN3E_music_game/song_writer.vhd sub00/vhpl09 1714636948
+EN song_writer NULL /home/ise/Projects/SPARTAN3E_music_game/song_writer.vhd sub00/vhpl08 1714636947
+EN kbd_2_ascii NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/kbd_2_ascii.vhd sub00/vhpl04 1713881125
+AR keyboard_driver behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/Keyboard_driver.vhd sub00/vhpl01 1713881128
+EN fsm_sendsamples NULL C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/FSM_SendSamples.vhd sub00/vhpl02 1713881123
+AR fsm_sendsamples behavioral C:/Users/lab/Desktop/Music_game/SPARTAN3E_music_game-main/SPARTAN3E_music_game-main/FSM_SendSamples.vhd sub00/vhpl03 1713881124

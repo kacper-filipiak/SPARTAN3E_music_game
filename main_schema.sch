@@ -42,11 +42,15 @@
         <signal name="XLXN_213" />
         <signal name="VGA_HS" />
         <signal name="VGA_VS" />
-        <signal name="XLXN_217" />
         <signal name="XLXN_219" />
         <signal name="VGA_R" />
         <signal name="VGA_G" />
         <signal name="VGA_B" />
+        <signal name="XLXN_220" />
+        <signal name="XLXN_221(7:0)" />
+        <signal name="XLXN_222" />
+        <signal name="XLXN_223" />
+        <signal name="Start" />
         <port polarity="Input" name="PS2_CLK" />
         <port polarity="Input" name="PS2_DATA" />
         <port polarity="Output" name="LED(2:0)" />
@@ -70,6 +74,7 @@
         <port polarity="Output" name="VGA_R" />
         <port polarity="Output" name="VGA_G" />
         <port polarity="Output" name="VGA_B" />
+        <port polarity="Input" name="Start" />
         <blockdef name="PS2_Rx">
             <timestamp>2009-5-15T12:32:14</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -204,6 +209,17 @@
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
+        <blockdef name="song_writer">
+            <timestamp>2024-5-2T8:4:43</timestamp>
+            <rect width="256" x="64" y="-192" height="192" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="WAVreader" name="XLXI_2">
             <blockpin signalname="XLXN_108(7:0)" name="FName(7:0)" />
             <blockpin signalname="led7" name="Start" />
@@ -262,7 +278,7 @@
             <blockpin signalname="XLXN_108(7:0)" name="ASCII(7:0)" />
         </block>
         <block symbolname="VGAtxt48x20" name="XLXI_16">
-            <blockpin name="Char_DI(7:0)" />
+            <blockpin signalname="XLXN_221(7:0)" name="Char_DI(7:0)" />
             <blockpin name="Home" />
             <blockpin name="NewLine" />
             <blockpin name="Goto00" />
@@ -275,7 +291,7 @@
             <blockpin signalname="VGA_HS" name="VGA_HS" />
             <blockpin signalname="VGA_VS" name="VGA_VS" />
             <blockpin signalname="XLXN_219" name="VGA_RGB" />
-            <blockpin name="Char_WE" />
+            <blockpin signalname="XLXN_220" name="Char_WE" />
         </block>
         <block symbolname="DACWrite" name="XLXI_3">
             <blockpin signalname="Reset" name="Reset" />
@@ -308,6 +324,14 @@
         <block symbolname="buf" name="XLXI_25">
             <blockpin signalname="XLXN_219" name="I" />
             <blockpin signalname="VGA_B" name="O" />
+        </block>
+        <block symbolname="song_writer" name="XLXI_26">
+            <blockpin signalname="Start" name="Start" />
+            <blockpin signalname="Reset" name="Rst" />
+            <blockpin signalname="CLK" name="Clk" />
+            <blockpin signalname="XLXN_220" name="WE" />
+            <blockpin name="Busy" />
+            <blockpin signalname="XLXN_221(7:0)" name="Char(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
@@ -432,11 +456,15 @@
             <wire x2="2976" y1="1664" y2="1664" x1="2832" />
         </branch>
         <branch name="Reset">
+            <wire x2="384" y1="2096" y2="2240" x1="384" />
+            <wire x2="448" y1="2240" y2="2240" x1="384" />
+            <wire x2="768" y1="2096" y2="2096" x1="384" />
             <wire x2="768" y1="1904" y2="1904" x1="496" />
             <wire x2="1552" y1="1904" y2="1904" x1="768" />
             <wire x2="2112" y1="1904" y2="1904" x1="1552" />
             <wire x2="2112" y1="1904" y2="2240" x1="2112" />
             <wire x2="2976" y1="2240" y2="2240" x1="2112" />
+            <wire x2="768" y1="1904" y2="2096" x1="768" />
             <wire x2="816" y1="1584" y2="1584" x1="768" />
             <wire x2="768" y1="1584" y2="1904" x1="768" />
             <wire x2="1616" y1="1568" y2="1568" x1="1552" />
@@ -481,6 +509,9 @@
         <iomarker fontsize="28" x="3456" y="2112" name="AD_CONV" orien="R0" />
         <iomarker fontsize="28" x="3456" y="2240" name="FPGA_INIT_B" orien="R0" />
         <branch name="CLK">
+            <wire x2="368" y1="2080" y2="2304" x1="368" />
+            <wire x2="448" y1="2304" y2="2304" x1="368" />
+            <wire x2="640" y1="2080" y2="2080" x1="368" />
             <wire x2="640" y1="1984" y2="1984" x1="480" />
             <wire x2="752" y1="1984" y2="1984" x1="640" />
             <wire x2="1440" y1="1984" y2="1984" x1="752" />
@@ -490,6 +521,7 @@
             <wire x2="2864" y1="2304" y2="2368" x1="2864" />
             <wire x2="2976" y1="2368" y2="2368" x1="2864" />
             <wire x2="2976" y1="2304" y2="2304" x1="2864" />
+            <wire x2="640" y1="1984" y2="2080" x1="640" />
             <wire x2="656" y1="992" y2="992" x1="640" />
             <wire x2="640" y1="992" y2="1056" x1="640" />
             <wire x2="656" y1="1056" y2="1056" x1="640" />
@@ -551,5 +583,22 @@
             <wire x2="2016" y1="2432" y2="2432" x1="1984" />
         </branch>
         <iomarker fontsize="28" x="2016" y="2432" name="VGA_B" orien="R0" />
+        <instance x="448" y="2336" name="XLXI_26" orien="R0">
+        </instance>
+        <branch name="XLXN_220">
+            <wire x2="1024" y1="2176" y2="2176" x1="832" />
+            <wire x2="1024" y1="2176" y2="2240" x1="1024" />
+            <wire x2="1232" y1="2240" y2="2240" x1="1024" />
+        </branch>
+        <branch name="XLXN_221(7:0)">
+            <wire x2="1040" y1="2304" y2="2304" x1="832" />
+            <wire x2="1040" y1="2176" y2="2304" x1="1040" />
+            <wire x2="1232" y1="2176" y2="2176" x1="1040" />
+        </branch>
+        <branch name="Start">
+            <wire x2="432" y1="2176" y2="2176" x1="272" />
+            <wire x2="448" y1="2176" y2="2176" x1="432" />
+        </branch>
+        <iomarker fontsize="28" x="272" y="2176" name="Start" orien="R180" />
     </sheet>
 </drawing>

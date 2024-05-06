@@ -1,0 +1,9 @@
+[Inputs]
+Start
+Rst
+Clk
+[Outputs]
+WE
+Busy
+=Char[7:0]=
+[BiDir]
