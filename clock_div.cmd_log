@@ -1,0 +1,2 @@
+vhdtdtfi -lib work clock_div.vhd -prj SPARTAN_3E_music_game -o clock_div.spl -module clock_div -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e clock_div.spl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/clock_div.sym 

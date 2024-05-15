@@ -1,3 +1,4 @@
+vhdl work "song_writer.vhd"
 vhdl work "Keyboard_driver.vhd"
 vhdl work "kbd_2_ascii.vhd"
 vhdl work "FSM_SendSamples.vhd"

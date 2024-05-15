@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main_schema.vhf
--- /___/   /\     Timestamp : 05/02/2024 07:26:26
+-- /___/   /\     Timestamp : 05/07/2024 17:57:21
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath /home/ise/Projects/SPARTAN3E_music_game/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl /home/ise/Projects/SPARTAN3E_music_game/main_schema.vhf -w /home/ise/Projects/SPARTAN3E_music_game/main_schema.sch
+--Command: sch2hdl -sympath C:/Users/lab/Desktop/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.sch
 --Design Name: main_schema
 --Device: spartan3e
 --Purpose:
@@ -27,11 +27,14 @@ use UNISIM.Vcomponents.ALL;
 
 entity main_schema is
    port ( CLK         : in    std_logic; 
+          DIVIDE      : in    std_logic; 
           PS2_CLK     : in    std_logic; 
           PS2_DATA    : in    std_logic; 
           Reset       : in    std_logic; 
+          Rst_iter    : in    std_logic; 
           SDC_MISO    : in    std_logic; 
           SPI_MISO    : in    std_logic; 
+          Start       : in    std_logic; 
           AD_CONV     : out   std_logic; 
           AMP_CS      : out   std_logic; 
           DAC_CLR     : out   std_logic; 
@@ -70,12 +73,9 @@ architecture BEHAVIORAL of main_schema is
    signal XLXN_108                       : std_logic_vector (7 downto 0);
    signal XLXN_213                       : std_logic;
    signal XLXN_219                       : std_logic;
-   signal XLXI_16_Char_DI_openSignal     : std_logic_vector (7 downto 0);
-   signal XLXI_16_Char_WE_openSignal     : std_logic;
-   signal XLXI_16_Clk_Sys_openSignal     : std_logic;
-   signal XLXI_16_Clk_50MHz_openSignal   : std_logic;
-   signal XLXI_16_CursorOn_openSignal    : std_logic;
-   signal XLXI_16_Goto00_openSignal      : std_logic;
+   signal XLXN_220                       : std_logic;
+   signal XLXN_221                       : std_logic_vector (7 downto 0);
+   signal XLXN_226                       : std_logic;
    signal XLXI_16_Home_openSignal        : std_logic;
    signal XLXI_16_NewLine_openSignal     : std_logic;
    signal XLXI_16_ScrollClear_openSignal : std_logic;
@@ -186,7 +186,18 @@ architecture BEHAVIORAL of main_schema is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
+   component song_writer
+      port ( Start    : in    std_logic; 
+             Rst      : in    std_logic; 
+             Rst_iter : in    std_logic; 
+             Clk      : in    std_logic; 
+             WE       : out   std_logic; 
+             Busy     : out   std_logic; 
+             Char     : out   std_logic_vector (7 downto 0));
+   end component;
+   
 begin
+   XLXN_226 <= '1';
    XLXI_1 : PS2_Rx
       port map (Clk_Sys=>CLK,
                 Clk_50MHz=>CLK,
@@ -265,12 +276,12 @@ begin
                 Play=>led7);
    
    XLXI_16 : VGAtxt48x20
-      port map (Char_DI(7 downto 0)=>XLXI_16_Char_DI_openSignal(7 downto 0),
-                Char_WE=>XLXI_16_Char_WE_openSignal,
-                Clk_Sys=>XLXI_16_Clk_Sys_openSignal,
-                Clk_50MHz=>XLXI_16_Clk_50MHz_openSignal,
-                CursorOn=>XLXI_16_CursorOn_openSignal,
-                Goto00=>XLXI_16_Goto00_openSignal,
+      port map (Char_DI(7 downto 0)=>XLXN_221(7 downto 0),
+                Char_WE=>XLXN_220,
+                Clk_Sys=>CLK,
+                Clk_50MHz=>CLK,
+                CursorOn=>XLXN_226,
+                Goto00=>Reset,
                 Home=>XLXI_16_Home_openSignal,
                 NewLine=>XLXI_16_NewLine_openSignal,
                 ScrollClear=>XLXI_16_ScrollClear_openSignal,
@@ -291,6 +302,15 @@ begin
    XLXI_25 : BUF
       port map (I=>XLXN_219,
                 O=>VGA_B);
+   
+   XLXI_26 : song_writer
+      port map (Clk=>CLK,
+                Rst=>Reset,
+                Rst_iter=>Rst_iter,
+                Start=>Start,
+                Busy=>open,
+                Char(7 downto 0)=>XLXN_221(7 downto 0),
+                WE=>XLXN_220);
    
 end BEHAVIORAL;
 

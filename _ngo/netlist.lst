@@ -1,5 +1,6 @@
-C:\Users\lab\Desktop\Music_game\SPARTAN3E_music_game-main\SPARTAN3E_music_game-main\main_schema.ngc 1713881129
-black_boxes/PS2_Rx.ngc 1713814335
-black_boxes/WAVreader.ngc 1713814335
-black_boxes/DACWrite.ngc 1713814335
+C:\Users\lab\Desktop\SPARTAN3E_music_game-main\main_schema.ngc 1715097453
+black_boxes/PS2_Rx.ngc 1715087789
+black_boxes/WAVreader.ngc 1715087789
+black_boxes/DACWrite.ngc 1715087789
+black_boxes/VGAtxt48x20.ngc 1715087780
 OK

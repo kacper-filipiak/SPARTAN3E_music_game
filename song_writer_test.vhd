@@ -43,6 +43,7 @@ ARCHITECTURE behavior OF song_writer_test IS
     PORT(
          Start : IN  std_logic;
          Rst : IN  std_logic;
+			Rst_iter : IN std_logic;
          Clk : IN  std_logic;
          Char : OUT  std_logic_vector(7 downto 0);
          WE : OUT  std_logic;
@@ -55,6 +56,7 @@ ARCHITECTURE behavior OF song_writer_test IS
    signal Start : std_logic := '1';
    signal Rst : std_logic := '0';
    signal Clk : std_logic := '0';
+	signal Rst_iter : std_logic := '0';
 
  	--Outputs
    signal Char : std_logic_vector(7 downto 0);
@@ -70,6 +72,7 @@ BEGIN
    uut: song_writer PORT MAP (
           Start => Start,
           Rst => Rst,
+			 Rst_iter => Rst_iter,
           Clk => Clk,
           Char => Char,
           WE => WE,
@@ -84,7 +87,9 @@ BEGIN
 		Clk <= '1';
 		wait for Clk_period/2;
    end process;
- 
+	
+	Rst_iter <= '1' after 1000ns;
+	
 
    -- Stimulus process
    stim_proc: process
