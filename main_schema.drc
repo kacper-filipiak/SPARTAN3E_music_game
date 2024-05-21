@@ -1,11 +1,8 @@
-Release 14.7 Drc P.20131013 (nt64)
+Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 07 17:58:04 2024
+Tue May 21 11:10:13 2024
 
 drc -z main_schema.ncd main_schema.pcf
 
-WARNING:PhysDesignRules:367 - The signal <DIVIDE_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.

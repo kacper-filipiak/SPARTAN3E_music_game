@@ -1,5 +1,5 @@
-set -tmpdir "/home/ise/Projects/SPARTAN3E_music_game/xst/projnav.tmp"
-set -xsthdpdir "/home/ise/Projects/SPARTAN3E_music_game/xst"
+set -tmpdir "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/xst/projnav.tmp"
+set -xsthdpdir "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/xst"
 elaborate
 -ifn song_writer.prj
 -ifmt mixed

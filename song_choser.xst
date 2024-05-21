@@ -1,0 +1,5 @@
+set -tmpdir "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/xst/projnav.tmp"
+set -xsthdpdir "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/xst"
+elaborate
+-ifn song_choser.prj
+-ifmt mixed

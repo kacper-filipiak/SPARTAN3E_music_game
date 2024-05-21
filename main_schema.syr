@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.02 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.02 secs
  
---> Reading design: main_schema.prj
+--> 
+Reading design: main_schema.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -107,16 +110,23 @@ Cores Search Directories           : {"black_boxes"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/main_schema is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf".
+WARNING:HDLParsers:3607 - Unit work/main_schema/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf".
+WARNING:HDLParsers:3607 - Unit work/FSM_SendSamples is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd".
+WARNING:HDLParsers:3607 - Unit work/FSM_SendSamples/Behavioral is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd".
+WARNING:HDLParsers:3607 - Unit work/kbd_2_ascii is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd".
+WARNING:HDLParsers:3607 - Unit work/kbd_2_ascii/Behavioral is now defined in a different file.  It was defined in "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd", and is now defined in "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd".
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd" in Library work.
 Architecture behavioral of Entity fsm_sendsamples is up to date.
-Compiling vhdl file "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd" in Library work.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd" in Library work.
 Architecture behavioral of Entity kbd_2_ascii is up to date.
-Compiling vhdl file "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd" in Library work.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd" in Library work.
 Architecture behavioral of Entity keyboard_driver is up to date.
-Compiling vhdl file "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd" in Library work.
-Entity <song_writer> compiled.
-Entity <song_writer> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" in Library work.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_writer.vhd" in Library work.
+Architecture behavioral of Entity song_writer is up to date.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd" in Library work.
+Architecture behavioral of Entity song_choser is up to date.
+Compiling vhdl file "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" in Library work.
 Entity <main_schema> compiled.
 Entity <main_schema> (Architecture <behavioral>) compiled.
 
@@ -133,22 +143,26 @@ Analyzing hierarchy for entity <Keyboard_driver> in library <work> (architecture
 
 Analyzing hierarchy for entity <song_writer> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <song_choser> in library <work> (architecture <behavioral>).
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <main_schema> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 201: Instantiating black box module <PS2_Rx>.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 209: Unconnected output port 'FmtMnS' of component 'WAVreader'.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 209: Unconnected output port 'Fmt8n16' of component 'WAVreader'.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 209: Unconnected output port 'FmtSRate' of component 'WAVreader'.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 209: Unconnected output port 'Busy' of component 'WAVreader'.
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 209: Instantiating black box module <WAVreader>.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 231: Unconnected output port 'SF_CE0' of component 'DACWrite'.
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 231: Instantiating black box module <DACWrite>.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 278: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 278: Instantiating black box module <VGAtxt48x20>.
-WARNING:Xst:753 - "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf" line 306: Unconnected output port 'Busy' of component 'song_writer'.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 241: Instantiating black box module <PS2_Rx>.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 249: Unconnected output port 'FmtMnS' of component 'WAVreader'.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 249: Unconnected output port 'Fmt8n16' of component 'WAVreader'.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 249: Unconnected output port 'FmtSRate' of component 'WAVreader'.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 249: Unconnected output port 'Busy' of component 'WAVreader'.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 249: Instantiating black box module <WAVreader>.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 271: Unconnected output port 'SF_CE0' of component 'DACWrite'.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 271: Instantiating black box module <DACWrite>.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 318: Unconnected output port 'Busy' of component 'VGAtxt48x20'.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 318: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:753 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 346: Unconnected output port 'Busy' of component 'song_writer'.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 356: Instantiating black box module <LCD1x64>.
+WARNING:Xst:2211 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf" line 367: Instantiating black box module <RotaryEnc>.
 Entity <main_schema> analyzed. Unit <main_schema> generated.
 
 Analyzing Entity <FSM_SendSamples> in library <work> (Architecture <behavioral>).
@@ -163,6 +177,11 @@ Entity <Keyboard_driver> analyzed. Unit <Keyboard_driver> generated.
 Analyzing Entity <song_writer> in library <work> (Architecture <behavioral>).
 Entity <song_writer> analyzed. Unit <song_writer> generated.
 
+Analyzing Entity <song_choser> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd" line 50: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <n>
+Entity <song_choser> analyzed. Unit <song_choser> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -171,7 +190,7 @@ Entity <song_writer> analyzed. Unit <song_writer> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <FSM_SendSamples>.
-    Related source file is "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd".
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd".
 WARNING:Xst:647 - Input <SampL<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <SampR<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_0> for signal <State>.
@@ -194,12 +213,12 @@ Unit <FSM_SendSamples> synthesized.
 
 
 Synthesizing Unit <kbd_2_ascii>.
-    Related source file is "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd".
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd".
 Unit <kbd_2_ascii> synthesized.
 
 
 Synthesizing Unit <Keyboard_driver>.
-    Related source file is "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd".
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd".
 WARNING:Xst:653 - Signal <prev_key> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
     Found 8-bit register for signal <key>.
     Found 1-bit register for signal <Labort>.
@@ -211,10 +230,10 @@ Unit <Keyboard_driver> synthesized.
 
 
 Synthesizing Unit <song_writer>.
-    Related source file is "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd".
-    Found 15x8-bit ROM for signal <Char>.
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_writer.vhd".
     Found 1-bit register for signal <Busy>.
     Found 1-bit register for signal <WE>.
+    Found 8-bit 300-to-1 multiplexer for signal <Char>.
     Found 1-bit register for signal <can_start>.
     Found 32-bit up counter for signal <counter>.
     Found 1-bit register for signal <game_on>.
@@ -225,22 +244,33 @@ Synthesizing Unit <song_writer>.
     Found 32-bit comparator greater for signal <running$cmp_gt0000> created at line 62.
     Found 32-bit comparator lessequal for signal <running$cmp_le0000> created at line 94.
     Summary:
-	inferred   1 ROM(s).
 	inferred   1 Counter(s).
 	inferred  37 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
-	inferred  32 Multiplexer(s).
+	inferred  40 Multiplexer(s).
 Unit <song_writer> synthesized.
 
 
+Synthesizing Unit <song_choser>.
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd".
+    Found 32-bit updown counter for signal <n>.
+    Found 32-bit comparator greater for signal <n$cmp_gt0000> created at line 59.
+    Found 32-bit comparator less for signal <n$cmp_lt0000> created at line 60.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <song_choser> synthesized.
+
+
 Synthesizing Unit <main_schema>.
-    Related source file is "C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf".
-WARNING:Xst:647 - Input <DIVIDE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Related source file is "/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf".
+WARNING:Xst:653 - Signal <XLXI_28_Blank_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
 WARNING:Xst:653 - Signal <XLXI_16_ScrollEn_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_16_ScrollClear_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_16_NewLine_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <XLXI_16_Home_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <Line<63:8>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000000000000000000000000000.
 Unit <main_schema> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -249,21 +279,22 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 1
- 15x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  32-bit subtractor                                     : 1
-# Counters                                             : 1
+# Counters                                             : 2
  32-bit up counter                                     : 1
+ 32-bit updown counter                                 : 1
 # Registers                                            : 10
  1-bit register                                        : 8
  32-bit register                                       : 1
  8-bit register                                        : 1
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 1
+# Multiplexers                                         : 2
  32-bit 8-to-1 multiplexer                             : 1
+ 8-bit 300-to-1 multiplexer                            : 1
 
 =========================================================================
 
@@ -287,10 +318,14 @@ Reading core <black_boxes/PS2_Rx.ngc>.
 Reading core <black_boxes/WAVreader.ngc>.
 Reading core <black_boxes/DACWrite.ngc>.
 Reading core <black_boxes/VGAtxt48x20.ngc>.
+Reading core <LCD1x64.ngc>.
+Reading core <RotaryEnc.ngc>.
 Loading core <PS2_Rx> for timing and area information for instance <XLXI_1>.
 Loading core <WAVreader> for timing and area information for instance <XLXI_2>.
 Loading core <DACWrite> for timing and area information for instance <XLXI_3>.
 Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_16>.
+Loading core <LCD1x64> for timing and area information for instance <XLXI_28>.
+Loading core <RotaryEnc> for timing and area information for instance <XLXI_30>.
 WARNING:Xst:1426 - The value init of the FF/Latch Lplay hinder the constant cleaning in the block XLXI_9.
    You should achieve better results by setting this init to 1.
 
@@ -299,19 +334,20 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# ROMs                                                 : 1
- 15x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  32-bit subtractor                                     : 1
-# Counters                                             : 1
+# Counters                                             : 2
  32-bit up counter                                     : 1
+ 32-bit updown counter                                 : 1
 # Registers                                            : 48
  Flip-Flops                                            : 48
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 1
+# Multiplexers                                         : 2
  32-bit 8-to-1 multiplexer                             : 1
+ 8-bit 300-to-1 multiplexer                            : 1
 
 =========================================================================
 
@@ -326,17 +362,25 @@ Optimizing unit <main_schema> ...
 Optimizing unit <Keyboard_driver> ...
 
 Optimizing unit <song_writer> ...
+
+Optimizing unit <song_choser> ...
 WARNING:Xst:2677 - Node <XLXI_26/Busy> of sequential type is unconnected in block <main_schema>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main_schema, actual ratio is 25.
+Found area constraint ratio of 100 (+ 5) on block main_schema, actual ratio is 37.
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/SpC_1> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/SpC_1_1> 
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/State_11> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/State_11_1> 
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/State_15> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/State_15_1> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_0> in Unit <XLXI_28> is equivalent to the following 4 FFs/Latches : <cntDigit_0_1> <cntDigit_0_2> <cntDigit_0_3> <cntDigit_0_4> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_1> in Unit <XLXI_28> is equivalent to the following 2 FFs/Latches : <cntDigit_1_1> <cntDigit_1_2> 
+INFO:Xst:2260 - The FF/Latch <State_16> in Unit <XLXI_28> is equivalent to the following FF/Latch : <State_16_1> 
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/SpC_1> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/SpC_1_1> 
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/State_11> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/State_11_1> 
 INFO:Xst:2260 - The FF/Latch <XLXI_4/XLXI_94/State_15> in Unit <XLXI_2> is equivalent to the following FF/Latch : <XLXI_4/XLXI_94/State_15_1> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_0> in Unit <XLXI_28> is equivalent to the following 4 FFs/Latches : <cntDigit_0_1> <cntDigit_0_2> <cntDigit_0_3> <cntDigit_0_4> 
+INFO:Xst:2260 - The FF/Latch <cntDigit_1> in Unit <XLXI_28> is equivalent to the following 2 FFs/Latches : <cntDigit_1_1> <cntDigit_1_2> 
+INFO:Xst:2260 - The FF/Latch <State_16> in Unit <XLXI_28> is equivalent to the following FF/Latch : <State_16_1> 
 
 Final Macro Processing ...
 
@@ -344,8 +388,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 82
- Flip-Flops                                            : 82
+# Registers                                            : 114
+ Flip-Flops                                            : 114
 
 =========================================================================
 
@@ -371,55 +415,58 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 28
+# IOs                              : 37
 
 Cell Usage :
-# BELS                             : 3212
+# BELS                             : 5053
 #      AND2                        : 1
 #      AND3                        : 4
 #      AND3B1                      : 4
 #      BUF                         : 3
-#      GND                         : 5
-#      INV                         : 105
-#      LUT1                        : 203
-#      LUT2                        : 237
-#      LUT2_D                      : 13
-#      LUT2_L                      : 25
-#      LUT3                        : 415
+#      GND                         : 7
+#      INV                         : 113
+#      LUT1                        : 230
+#      LUT2                        : 307
+#      LUT2_D                      : 12
+#      LUT2_L                      : 29
+#      LUT3                        : 742
 #      LUT3_D                      : 19
-#      LUT3_L                      : 11
-#      LUT4                        : 913
-#      LUT4_D                      : 74
-#      LUT4_L                      : 105
+#      LUT3_L                      : 15
+#      LUT4                        : 1327
+#      LUT4_D                      : 78
+#      LUT4_L                      : 124
 #      MULT_AND                    : 10
-#      MUXCY                       : 493
-#      MUXF5                       : 95
+#      MUXCY                       : 569
+#      MUXF5                       : 510
 #      MUXF5_L                     : 2
-#      MUXF6                       : 15
+#      MUXF6                       : 251
+#      MUXF7                       : 121
+#      MUXF8                       : 54
 #      OR2                         : 7
-#      VCC                         : 5
+#      VCC                         : 7
 #      XOR2                        : 1
-#      XORCY                       : 447
-# FlipFlops/Latches                : 926
-#      FD                          : 140
+#      XORCY                       : 506
+# FlipFlops/Latches                : 1056
+#      FD                          : 145
 #      FDC                         : 3
-#      FDE                         : 267
-#      FDR                         : 44
-#      FDRE                        : 322
-#      FDRS                        : 6
-#      FDRSE                       : 5
-#      FDS                         : 133
+#      FDE                         : 278
+#      FDR                         : 95
+#      FDRE                        : 359
+#      FDRS                        : 17
+#      FDRSE                       : 9
+#      FDS                         : 144
 #      FDSE                        : 6
 # RAMS                             : 3
 #      RAMB16_S9                   : 1
 #      RAMB16_S9_S9                : 2
-# Shift Registers                  : 3
-#      SRL16                       : 3
+# Shift Registers                  : 5
+#      SRL16                       : 5
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 26
-#      IBUF                        : 7
-#      OBUF                        : 19
+# IO Buffers                       : 36
+#      IBUF                        : 9
+#      IOBUF                       : 4
+#      OBUF                        : 23
 =========================================================================
 
 Device utilization summary:
@@ -427,13 +474,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                     1201  out of   4656    25%  
- Number of Slice Flip Flops:            926  out of   9312     9%  
- Number of 4 input LUTs:               2123  out of   9312    22%  
-    Number used as logic:              2120
-    Number used as Shift registers:       3
- Number of IOs:                          28
- Number of bonded IOBs:                  27  out of    232    11%  
+ Number of Slices:                     1761  out of   4656    37%  
+ Number of Slice Flip Flops:           1056  out of   9312    11%  
+ Number of 4 input LUTs:               3001  out of   9312    32%  
+    Number used as logic:              2996
+    Number used as Shift registers:       5
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    232    15%  
  Number of BRAMs:                         3  out of     20    15%  
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -458,7 +505,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 932   |
+CLK                                | BUFGP                  | 1064  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -473,8 +520,8 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 12.088ns (Maximum Frequency: 82.727MHz)
-   Minimum input arrival time before clock: 8.147ns
+   Minimum period: 12.448ns (Maximum Frequency: 80.334MHz)
+   Minimum input arrival time before clock: 8.160ns
    Maximum output required time after clock: 7.533ns
    Maximum combinational path delay: 7.263ns
 
@@ -484,41 +531,41 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 12.088ns (frequency: 82.727MHz)
-  Total number of paths / destination ports: 81126 / 2092
+  Clock period: 12.448ns (frequency: 80.334MHz)
+  Total number of paths / destination ports: 106234 / 2358
 -------------------------------------------------------------------------
-Delay:               12.088ns (Levels of Logic = 11)
-  Source:            XLXI_9/key_5 (FF)
+Delay:               12.448ns (Levels of Logic = 11)
+  Source:            XLXI_9/key_2 (FF)
   Destination:       XLXI_2/XLXI_4/XLXI_94/State_23 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: XLXI_9/key_5 to XLXI_2/XLXI_4/XLXI_94/State_23
+  Data Path: XLXI_9/key_2 to XLXI_2/XLXI_4/XLXI_94/State_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             15   0.591   1.192  XLXI_9/key_5 (XLXI_9/key_5)
-     LUT4:I0->O            5   0.704   0.637  XLXI_8/ASCII<2>16 (N7)
-     LUT4:I3->O            1   0.704   0.000  XLXI_8/ASCII<6>2_F (N52)
-     MUXF5:I0->O           2   0.321   0.451  XLXI_8/ASCII<6>2 (N2)
-     LUT4:I3->O            1   0.704   0.595  XLXI_8/ASCII<0> (XLXN_108<0>)
+     FDE:C->Q             16   0.591   1.209  XLXI_9/key_2 (XLXI_9/key_2)
+     LUT3:I0->O            1   0.704   0.424  XLXI_8/ASCII<6>2_SW0_SW0 (N52)
+     LUT4:I3->O            1   0.704   0.424  XLXI_8/ASCII<6>2_SW0 (N29)
+     LUT4_D:I3->O          1   0.704   0.424  XLXI_8/ASCII<6>2 (N2)
+     LUT4:I3->O            1   0.704   0.595  XLXI_8/ASCII<6>91 (XLXN_108<6>)
      begin scope: 'XLXI_2'
-     LUT2:I0->O            1   0.704   0.499  XLXI_4/XLXI_94/NextState_and0010124 (XLXI_4/XLXI_94/NextState_and0010124)
-     LUT4:I1->O            2   0.704   0.451  XLXI_4/XLXI_94/NextState_and0010159_SW0 (N493)
+     LUT4_L:I0->LO         1   0.704   0.275  XLXI_4/XLXI_94/NextState_and0010113 (XLXI_4/XLXI_94/NextState_and0010113)
+     LUT4:I0->O            2   0.704   0.451  XLXI_4/XLXI_94/NextState_and0010159_SW0 (N493)
      LUT4_L:I3->LO         1   0.704   0.179  XLXI_4/XLXI_94/NextState_and0010159 (XLXI_4/XLXI_94/NextState_and0010)
      LUT3:I1->O            1   0.704   0.424  XLXI_4/XLXI_94/State_mux0002<8>110 (XLXI_4/XLXI_94/State_mux0002<8>110)
      LUT4_L:I3->LO         1   0.704   0.104  XLXI_4/XLXI_94/State_mux0002<8>129_SW0 (N459)
      LUT4:I3->O            1   0.704   0.000  XLXI_4/XLXI_94/State_mux0002<8>1831 (XLXI_4/XLXI_94/State_mux0002<8>183)
      FDS:D                     0.308          XLXI_4/XLXI_94/State_23
     ----------------------------------------
-    Total                     12.088ns (7.556ns logic, 4.532ns route)
-                                       (62.5% logic, 37.5% route)
+    Total                     12.448ns (7.939ns logic, 4.509ns route)
+                                       (63.8% logic, 36.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 254 / 235
+  Total number of paths / destination ports: 295 / 276
 -------------------------------------------------------------------------
-Offset:              8.147ns (Levels of Logic = 6)
+Offset:              8.160ns (Levels of Logic = 6)
   Source:            Reset (PAD)
   Destination:       XLXI_2/XLXI_3/State_4 (FF)
   Destination Clock: CLK rising
@@ -527,7 +574,7 @@ Offset:              8.147ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           102   1.218   1.459  Reset_IBUF (Reset_IBUF)
+     IBUF:I->O           141   1.218   1.472  Reset_IBUF (Reset_IBUF)
      begin scope: 'XLXI_2'
      LUT2:I0->O           15   0.704   1.096  XLXI_3/State_mux0002<14>131 (XLXI_3/N19)
      LUT4:I1->O            3   0.704   0.610  XLXI_3/State_mux0002<16>111 (XLXI_3/N22)
@@ -535,12 +582,12 @@ Offset:              8.147ns (Levels of Logic = 6)
      MUXF5:I1->O           1   0.321   0.420  XLXI_3/State_mux0002<16>19_f5 (XLXI_3/State_mux0002<16>19)
      FDRS:S                    0.911          XLXI_3/State_4
     ----------------------------------------
-    Total                      8.147ns (4.562ns logic, 3.585ns route)
-                                       (56.0% logic, 44.0% route)
+    Total                      8.160ns (4.562ns logic, 3.598ns route)
+                                       (55.9% logic, 44.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 17 / 13
+  Total number of paths / destination ports: 43 / 20
 -------------------------------------------------------------------------
 Offset:              7.533ns (Levels of Logic = 4)
   Source:            XLXI_2/XLXI_4/XLXI_96/I_Transc/State_3 (FF)
@@ -572,7 +619,7 @@ Delay:               7.263ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     BUFGP:I->O          935   1.457   1.410  CLK_BUFGP (CLK_BUFGP)
+     BUFGP:I->O         1067   1.457   1.410  CLK_BUFGP (CLK_BUFGP)
      begin scope: 'XLXI_3'
      INV:I->O              1   0.704   0.420  SPI_SCK1_INV_0 (SPI_SCK)
      end scope: 'XLXI_3'
@@ -584,14 +631,15 @@ Delay:               7.263ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.29 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.83 secs
  
 --> 
 
-Total memory usage is 4581888 kilobytes
+
+Total memory usage is 647104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   22 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 

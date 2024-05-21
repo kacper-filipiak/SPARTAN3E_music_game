@@ -33,6 +33,7 @@ entity song_writer is
     Port ( Start : in  STD_LOGIC;
            Rst : in  STD_LOGIC;
 			  Rst_iter : in STD_LOGIC;
+			  song : in STD_LOGIC_VECTOR(300 * 8 - 1 downto 0);
            Clk : in  STD_LOGIC;
            Char : out  STD_LOGIC_VECTOR(7 downto 0);
            WE : out  STD_LOGIC;
@@ -42,7 +43,6 @@ end song_writer;
 architecture Behavioral of song_writer is
 
 constant N: Integer := 15;
-constant song: STD_LOGIC_VECTOR(N * 8 - 1 downto 0) := X"202020202020202066206b68682067";
 signal running: STD_LOGIC := '0';
 signal iter: Integer := N - 1;
 signal can_start : STD_LOGIC := '1';

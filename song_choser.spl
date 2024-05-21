@@ -1,0 +1,8 @@
+[Inputs]
+RotL
+RotR
+Clk
+[Outputs]
+=song[2399:0]=
+=song_name[7:0]=
+[BiDir]

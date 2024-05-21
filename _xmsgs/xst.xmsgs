@@ -5,37 +5,65 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">201</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">PS2_Rx</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/main_schema</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FmtMnS</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/main_schema/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Fmt8n16</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FSM_SendSamples</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FmtSRate</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FSM_SendSamples/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/kbd_2_ascii</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">209</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">WAVreader</arg>&gt;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/kbd_2_ascii/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">231</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SF_CE0</arg>&apos; of component &apos;<arg fmt="%s" index="4">DACWrite</arg>&apos;.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">241</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">PS2_Rx</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">231</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">DACWrite</arg>&gt;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FmtMnS</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">278</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">VGAtxt48x20</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Fmt8n16</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">278</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGAtxt48x20</arg>&gt;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FmtSRate</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">306</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">song_writer</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">WAVreader</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">249</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">WAVreader</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SF_CE0</arg>&apos; of component &apos;<arg fmt="%s" index="4">DACWrite</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">271</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">DACWrite</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">318</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">VGAtxt48x20</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">318</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">VGAtxt48x20</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">346</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Busy</arg>&apos; of component &apos;<arg fmt="%s" index="4">song_writer</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">356</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">LCD1x64</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf</arg>&quot; line <arg fmt="%d" index="2">367</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">RotaryEnc</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;n&gt;</arg>
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SampL&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -47,7 +75,7 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">prev_key</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DIVIDE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_28_Blank_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_16_ScrollEn_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
@@ -62,6 +90,9 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_16_Home_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Line&lt;63:8&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
@@ -73,7 +104,7 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">XLXI_26/Busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main_schema</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">XLXI_26/Busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main_schema</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_4/XLXI_94/SpC_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;XLXI_4/XLXI_94/SpC_1_1&gt; </arg>
@@ -85,6 +116,15 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_4/XLXI_94/State_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;XLXI_4/XLXI_94/State_15_1&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cntDigit_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;cntDigit_0_1&gt; &lt;cntDigit_0_2&gt; &lt;cntDigit_0_3&gt; &lt;cntDigit_0_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cntDigit_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;cntDigit_1_1&gt; &lt;cntDigit_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">State_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;State_16_1&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_4/XLXI_94/SpC_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;XLXI_4/XLXI_94/SpC_1_1&gt; </arg>
 </msg>
 
@@ -92,6 +132,15 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">XLXI_4/XLXI_94/State_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;XLXI_4/XLXI_94/State_15_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cntDigit_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;cntDigit_0_1&gt; &lt;cntDigit_0_2&gt; &lt;cntDigit_0_3&gt; &lt;cntDigit_0_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cntDigit_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;cntDigit_1_1&gt; &lt;cntDigit_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">State_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">XLXI_28</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;State_16_1&gt; </arg>
 </msg>
 
 </messages>

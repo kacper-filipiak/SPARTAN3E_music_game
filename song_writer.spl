@@ -3,6 +3,7 @@ Start
 Rst
 Rst_iter
 Clk
+=song[2399:0]=
 [Outputs]
 WE
 Busy

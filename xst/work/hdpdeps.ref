@@ -1,39 +1,51 @@
-V3 25
-FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd 2024/05/07.15:16:27 P.20131013
-EN work/FSM_SendSamples 1715097443 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd \
+V3 36
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd 2024/05/07.15:16:28 P.20131013
+EN work/FSM_SendSamples 1716282571 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/FSM_SendSamples/Behavioral 1715097444 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd \
-      EN work/FSM_SendSamples 1715097443
-FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd 2024/05/07.15:16:28 P.20131013
-EN work/kbd_2_ascii 1715097445 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd \
+AR work/FSM_SendSamples/Behavioral 1716282572 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/FSM_SendSamples.vhd \
+      EN work/FSM_SendSamples 1716282571
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd 2024/05/07.15:16:30 P.20131013
+EN work/kbd_2_ascii 1716282573 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/kbd_2_ascii/Behavioral 1715097446 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd \
-      EN work/kbd_2_ascii 1715097445
-FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd 2024/05/07.15:16:27 P.20131013
-EN work/Keyboard_driver 1715097447 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd \
+AR work/kbd_2_ascii/Behavioral 1716282574 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/kbd_2_ascii.vhd \
+      EN work/kbd_2_ascii 1716282573
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd 2024/05/07.15:16:28 P.20131013
+EN work/Keyboard_driver 1716282575 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Keyboard_driver/Behavioral 1715097448 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd \
-      EN work/Keyboard_driver 1715097447
-FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf 2024/05/07.17:57:21 P.20131013
-EN work/main_schema 1715097451 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf \
+AR work/Keyboard_driver/Behavioral 1716282576 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/Keyboard_driver.vhd \
+      EN work/Keyboard_driver 1716282575
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf 2024/05/21.11:09:28 P.20131013
+EN work/main_schema 1716282581 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/main_schema/BEHAVIORAL 1715097452 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf \
-      EN work/main_schema 1715097451 CP PS2_Rx CP WAVreader CP DACWrite \
+AR work/main_schema/BEHAVIORAL 1716282582 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf \
+      EN work/main_schema 1716282581 CP PS2_Rx CP WAVreader CP DACWrite \
       CP FSM_SendSamples CP kbd_2_ascii CP Keyboard_driver CP VGAtxt48x20 CP BUF \
-      CP song_writer
-FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd 2024/05/07.17:56:47 P.20131013
-EN work/song_writer 1715097449 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd \
+      CP song_writer CP LCD1x64 CP RotaryEnc CP song_choser
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd 2024/05/21.10:53:58 P.20131013
+EN work/song_choser 1716282579 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/song_choser/Behavioral 1716282580 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.vhd \
+      EN work/song_choser 1716282579
+FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_writer.vhd 2024/05/21.10:56:53 P.20131013
+EN work/song_writer 1716282577 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_writer.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/song_writer/Behavioral 1715097450 \
-      FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd \
-      EN work/song_writer 1715097449
+AR work/song_writer/Behavioral 1716282578 \
+      FL /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_writer.vhd \
+      EN work/song_writer 1716282577
+FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/FSM_SendSamples.vhd 2024/05/07.15:16:27 P.20131013
+FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/kbd_2_ascii.vhd 2024/05/07.15:16:28 P.20131013
+FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/Keyboard_driver.vhd 2024/05/07.15:16:27 P.20131013
+FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf 2024/05/07.17:57:21 P.20131013
+FL C:/Users/lab/Desktop/SPARTAN3E_music_game-main/song_writer.vhd 2024/05/07.17:56:47 P.20131013

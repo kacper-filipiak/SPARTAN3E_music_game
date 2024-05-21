@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main_schema.vhf
--- /___/   /\     Timestamp : 05/07/2024 17:57:21
+-- /___/   /\     Timestamp : 05/21/2024 11:09:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath C:/Users/lab/Desktop/SPARTAN3E_music_game-main/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.vhf -w C:/Users/lab/Desktop/SPARTAN3E_music_game-main/main_schema.sch
+--Command: sch2hdl -sympath /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/black_boxes -intstyle ise -family spartan3e -flat -suppress -vhdl /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.vhf -w /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.sch
 --Design Name: main_schema
 --Device: spartan3e
 --Purpose:
@@ -27,23 +27,28 @@ use UNISIM.Vcomponents.ALL;
 
 entity main_schema is
    port ( CLK         : in    std_logic; 
-          DIVIDE      : in    std_logic; 
           PS2_CLK     : in    std_logic; 
           PS2_DATA    : in    std_logic; 
           Reset       : in    std_logic; 
+          ROT_A       : in    std_logic; 
+          ROT_B       : in    std_logic; 
+          ROT_CENTER  : in    std_logic; 
           Rst_iter    : in    std_logic; 
           SDC_MISO    : in    std_logic; 
           SPI_MISO    : in    std_logic; 
-          Start       : in    std_logic; 
           AD_CONV     : out   std_logic; 
           AMP_CS      : out   std_logic; 
           DAC_CLR     : out   std_logic; 
           DAC_DS      : out   std_logic; 
           FPGA_INIT_B : out   std_logic; 
+          LCD_E       : out   std_logic; 
+          LCD_RS      : out   std_logic; 
+          LCD_RW      : out   std_logic; 
           LED         : out   std_logic_vector (2 downto 0); 
           SDC_MOSI    : out   std_logic; 
           SDC_SCK     : out   std_logic; 
           SDC_SS      : out   std_logic; 
+          SF_CE       : out   std_logic; 
           SPI_MOSI    : out   std_logic; 
           SPI_SKC     : out   std_logic; 
           SPI_SS_B    : out   std_logic; 
@@ -51,13 +56,15 @@ entity main_schema is
           VGA_G       : out   std_logic; 
           VGA_HS      : out   std_logic; 
           VGA_R       : out   std_logic; 
-          VGA_VS      : out   std_logic);
+          VGA_VS      : out   std_logic; 
+          LCD_D       : inout std_logic_vector (3 downto 0));
 end main_schema;
 
 architecture BEHAVIORAL of main_schema is
    attribute BOX_TYPE   : string ;
    signal led6                           : std_logic;
    signal led7                           : std_logic;
+   signal Line                           : std_logic_vector (63 downto 0);
    signal XLXN_8                         : std_logic_vector (15 downto 0);
    signal XLXN_9                         : std_logic_vector (15 downto 0);
    signal XLXN_14                        : std_logic;
@@ -76,10 +83,14 @@ architecture BEHAVIORAL of main_schema is
    signal XLXN_220                       : std_logic;
    signal XLXN_221                       : std_logic_vector (7 downto 0);
    signal XLXN_226                       : std_logic;
+   signal XLXN_318                       : std_logic;
+   signal XLXN_319                       : std_logic;
+   signal XLXN_324                       : std_logic_vector (2399 downto 0);
    signal XLXI_16_Home_openSignal        : std_logic;
    signal XLXI_16_NewLine_openSignal     : std_logic;
    signal XLXI_16_ScrollClear_openSignal : std_logic;
    signal XLXI_16_ScrollEn_openSignal    : std_logic;
+   signal XLXI_28_Blank_openSignal       : std_logic_vector (15 downto 0);
    component PS2_Rx
       port ( PS2_Clk   : in    std_logic; 
              PS2_Data  : in    std_logic; 
@@ -191,9 +202,38 @@ architecture BEHAVIORAL of main_schema is
              Rst      : in    std_logic; 
              Rst_iter : in    std_logic; 
              Clk      : in    std_logic; 
+             song     : in    std_logic_vector (2399 downto 0); 
              WE       : out   std_logic; 
              Busy     : out   std_logic; 
              Char     : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component LCD1x64
+      port ( Clk_50MHz : in    std_logic; 
+             Reset     : in    std_logic; 
+             Line      : in    std_logic_vector (63 downto 0); 
+             Blank     : in    std_logic_vector (15 downto 0); 
+             LCD_D     : inout std_logic_vector (3 downto 0); 
+             LCD_E     : out   std_logic; 
+             LCD_RW    : out   std_logic; 
+             LCD_RS    : out   std_logic; 
+             SF_CE     : out   std_logic);
+   end component;
+   
+   component RotaryEnc
+      port ( ROT_A : in    std_logic; 
+             ROT_B : in    std_logic; 
+             RotL  : out   std_logic; 
+             RotR  : out   std_logic; 
+             Clk   : in    std_logic);
+   end component;
+   
+   component song_choser
+      port ( Clk       : in    std_logic; 
+             song      : out   std_logic_vector (2399 downto 0); 
+             song_name : out   std_logic_vector (7 downto 0); 
+             RotL      : in    std_logic; 
+             RotR      : in    std_logic);
    end component;
    
 begin
@@ -307,10 +347,36 @@ begin
       port map (Clk=>CLK,
                 Rst=>Reset,
                 Rst_iter=>Rst_iter,
-                Start=>Start,
+                song(2399 downto 0)=>XLXN_324(2399 downto 0),
+                Start=>ROT_CENTER,
                 Busy=>open,
                 Char(7 downto 0)=>XLXN_221(7 downto 0),
                 WE=>XLXN_220);
+   
+   XLXI_28 : LCD1x64
+      port map (Blank(15 downto 0)=>XLXI_28_Blank_openSignal(15 downto 0),
+                Clk_50MHz=>CLK,
+                Line(63 downto 0)=>Line(63 downto 0),
+                Reset=>Reset,
+                LCD_E=>LCD_E,
+                LCD_RS=>LCD_RS,
+                LCD_RW=>LCD_RW,
+                SF_CE=>SF_CE,
+                LCD_D(3 downto 0)=>LCD_D(3 downto 0));
+   
+   XLXI_30 : RotaryEnc
+      port map (Clk=>CLK,
+                ROT_A=>ROT_A,
+                ROT_B=>ROT_B,
+                RotL=>XLXN_318,
+                RotR=>XLXN_319);
+   
+   XLXI_31 : song_choser
+      port map (Clk=>CLK,
+                RotL=>XLXN_318,
+                RotR=>XLXN_319,
+                song(2399 downto 0)=>XLXN_324(2399 downto 0),
+                song_name(7 downto 0)=>Line(7 downto 0));
    
 end BEHAVIORAL;
 

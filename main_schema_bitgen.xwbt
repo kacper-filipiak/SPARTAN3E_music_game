@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\lab\Desktop\SPARTAN3E_music_game-main\main_schema.ncd
-OUTFILE=C:\Users\lab\Desktop\SPARTAN3E_music_game-main\main_schema.bit
+INFILE=/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.ncd
+OUTFILE=/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/main_schema.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\lab\Desktop\SPARTAN3E_music_game-main
-LICENSE=ISE
-USER_INFO=174693031_177724690_210785003_704
+WORKINGDIR=/home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game
+LICENSE=WebPack
+USER_INFO=212859225_0_0_177

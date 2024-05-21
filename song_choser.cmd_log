@@ -1,0 +1,4 @@
+vhdtdtfi -lib work song_choser.vhd -prj SPARTAN_3E_music_game -o song_choser.spl -module song_choser -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w song_choser.spl /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.sym 
+vhdtdtfi -lib work song_choser.vhd -prj SPARTAN_3E_music_game -o song_choser.spl -module song_choser -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w song_choser.spl /home/franekskc/Pulpit/UCiSW2/SPARTAN3E_music_game/song_choser.sym 
